@@ -8,7 +8,7 @@ date: "Wednesday, December 4, 2019"
 
 ```{r}
 library(tidyverse)
-animals <- read.csv("../../data/animals.csv", row.names=1)
+animals <- read.csv("../data/animals.csv", row.names=1)
 ```
 
 1. Change the `animals` data frame to a tibble called `animals_tb`. Save the row names to a column called `animal_names` before turning it into a tibble.
@@ -81,7 +81,7 @@ ggplot(animals_tb) +
         ylab("Speed (km/h)") +
         xlab("Animal") +
         theme(plot.title=element_text(hjust=0.5))
-ggsave("../../figures/animals_by_speed_scatterplot.pdf")
+ggsave("../figures/animals_by_speed_scatterplot.pdf")
 
 ```
 

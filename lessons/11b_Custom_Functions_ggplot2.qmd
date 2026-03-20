@@ -10,7 +10,7 @@ Approximate time: 20 minutes
 #| echo: false
 #| eval: true
 library(ggplot2)
-load("../data/new_metadata.RData")
+load("data/new_metadata.RData")
 ```
 
 ## Learning Objectives 

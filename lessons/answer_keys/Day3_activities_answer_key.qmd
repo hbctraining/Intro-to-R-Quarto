@@ -11,7 +11,7 @@ date: "Wednesday, December 4, 2019"
 2. Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
 
 ```{r}
-animals <- read.csv("../../data/animals.csv")
+animals <- read.csv("../data/animals.csv")
 animals
 ```
 
@@ -80,7 +80,7 @@ names(animals_list) <- colnames(animals)
 1. In your environment you should have a dataframe called `proj_summary` which contains quality metric information for an RNA-seq dataset. We have obtained batch information for the control samples in this dataset. **Copy and paste the code below to create a dataframe of control samples with the associated batch information**:
 
 ```{r}
-proj_summary <- read.table(file = "../../data/project-summary.txt", header = TRUE, row.names = 1)
+proj_summary <- read.table(file = "../data/project-summary.txt", header = TRUE, row.names = 1)
 
 ctrl_samples <- data.frame(row.names = c("sample3", "sample10", "sample8", "sample4", "sample15"), 
                             date = c("01/13/2018", "03/15/2018", "01/13/2018", "09/20/2018","03/15/2018"))

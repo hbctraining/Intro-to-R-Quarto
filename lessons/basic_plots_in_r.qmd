@@ -8,8 +8,8 @@ Approximate time: 45 minutes
 
 ```{r}
 #| echo: false
-rpkm_data <- read.csv("../data/counts.rpkm.csv")
-metadata <- read.csv(file="../data/mouse_exp_design.csv")
+rpkm_data <- read.csv("data/counts.rpkm.csv")
+metadata <- read.csv(file="data/mouse_exp_design.csv")
 
 genomic_idx <- match(rownames(metadata), colnames(rpkm_data))
 rpkm_ordered  <- rpkm_data[ , genomic_idx]
